@@ -10,8 +10,8 @@ export default class Avatars extends Component<Props> {
         return (
             <View style={styles.container}>
                 <ScrollView contentContainerStyle={{padding: 20}}>
-                    <Text h1>Avatars</Text>
-                    <Text h3>Avatar with initials</Text>
+                    <Text h3>Avatars</Text>
+                    <Text h5>Avatar with initials</Text>
                     <View style={styles.flexRow}>
                         <Avatar
                             size="small"
@@ -40,7 +40,7 @@ export default class Avatars extends Component<Props> {
                             activeOpacity={0.7}
                         />
                     </View>
-                    <Text h3>Avatar with icons</Text>
+                    <Text h5>Avatar with icons</Text>
                     <View style={styles.flexColumn}>
                         <Avatar
                             rounded
@@ -93,7 +93,7 @@ export default class Avatars extends Component<Props> {
 
                     </View>
 
-                    <Text h3>Avatar with title placeholder</Text>
+                    <Text h5>Avatar with title placeholder</Text>
                     <View>
                         <ListItem
                             leftAvatar={{
