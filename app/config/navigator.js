@@ -3,12 +3,7 @@ import { View, Text } from "react-native";
 import { createStackNavigator, createAppContainer, createDrawerNavigator, createMaterialTopTabNavigator, } from "react-navigation";
 import Home from "../screens/Home"
 import Page2 from "../screens/Page2"
-
-const AppNavigator = createStackNavigator({
-    Home: {
-        screen: Home
-    }
-});
+import Avatars from "../screens/Avatars"
 
 
 const Tabs = createMaterialTopTabNavigator({
@@ -20,9 +15,24 @@ const Tabs = createMaterialTopTabNavigator({
     })
 
 const Drawer = createDrawerNavigator({
+    Avatars: { screen: Avatars },
     Home: { screen: Home },
     Page2: { screen: Page2 },
     Tabs: { screen: Tabs },
 })
+
+
+const AppNavigator = createStackNavigator({
+    Drawer: {
+        screen: Drawer
+    },
+    Home: {
+        screen: Home
+    },
+}, {
+        headerMode: 'none',
+        initialRouteName: 'Drawer',
+    });
+
 
 export default createAppContainer(Drawer);

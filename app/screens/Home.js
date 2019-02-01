@@ -1,24 +1,9 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- * @lint-ignore-every XPLATJSCOPYRIGHT1
- */
-
 import React, { Component } from 'react';
 import { Platform, StyleSheet, Text, View, ScrollView } from 'react-native';
 
-import { Button, ThemeProvider, Avatar, ListItem } from 'react-native-elements';
+import { Button, Avatar, ListItem } from 'react-native-elements';
 
-const MyApp = () => {
-    return (
-        <ThemeProvider>
-            <Button title="Hey!" />
-        </ThemeProvider>
-    );
-};
+
 
 type Props = {};
 export default class Home extends Component<Props> {
@@ -26,14 +11,13 @@ export default class Home extends Component<Props> {
         return (
             <View style={styles.container}>
                 <ScrollView>
-                    <ThemeProvider>
-                        <Button title="Hey!" />
-                    </ThemeProvider>
+                    <Button title="Hey!" />
+                    <Button title="My Button" />
 
                     <Avatar
                         rounded
                         icon={{ name: 'user', type: 'font-awesome' }}
-                        onPress={() => console.log("Works!")}
+                        onPress={() => this.props.navigation.openDrawer()}
                         activeOpacity={0.7}
                         containerStyle={{ flex: 2, marginLeft: 20, marginTop: 115 }}
                     />
