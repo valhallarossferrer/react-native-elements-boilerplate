@@ -7,7 +7,7 @@ type Props = {};
 
 const BadgedIcon = withBadge(1)(Icon)
 
-export default class Badges extends Component<Props> {
+export default class BadgeScreen extends Component<Props> {
     render() {
         return (
             <View style={styles.container}>

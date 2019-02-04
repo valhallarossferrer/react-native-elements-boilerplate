@@ -5,7 +5,7 @@ import { Card, Text, ListItem, Button, Icon } from 'react-native-elements'
 
 
 type Props = {};
-export default class Cards extends Component<Props> {
+export default class CardScreen extends Component<Props> {
     render() {
         const users = [
             {

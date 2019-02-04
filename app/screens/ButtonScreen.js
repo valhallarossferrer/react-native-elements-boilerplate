@@ -6,7 +6,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 
 
 type Props = {};
-export default class Buttons extends Component<Props> {
+export default class ButtonScreen extends Component<Props> {
     constructor() {
         super()
         this.state = {

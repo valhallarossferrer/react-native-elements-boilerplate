@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Platform, StyleSheet, View, ScrollView, Image } from 'react-native';
-import { CheckBox, Text } from 'react-native-elements';
+import { CheckBox, Text, Divider } from 'react-native-elements';
 
 
 
 type Props = {};
-export default class CheckBoxes extends Component<Props> {
+export default class CheckBoxScreen extends Component<Props> {
     constructor() {
         super()
         this.state = {
@@ -17,6 +17,7 @@ export default class CheckBoxes extends Component<Props> {
             <View style={styles.container}>
                 <ScrollView contentContainerStyle={{ padding: 20 }}>
                     <Text h3>CheckBox</Text>
+
                     <CheckBox
                         title='Click Here'
                         checked={this.state.isChecked}
@@ -30,6 +31,7 @@ export default class CheckBoxes extends Component<Props> {
                         checked={this.state.checked}
                     />
 
+                    <Divider style={{ backgroundColor: 'blue', height: 10}}/>
                     <CheckBox
                         center
                         title='Click Here to Remove This Item'

@@ -5,7 +5,7 @@ import { Button, Avatar, ListItem, Text } from 'react-native-elements';
 
 
 type Props = {};
-export default class Avatars extends Component<Props> {
+export default class AvatarScreen extends Component<Props> {
     render() {
         return (
             <View style={styles.container}>
